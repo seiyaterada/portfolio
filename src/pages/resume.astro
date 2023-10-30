@@ -1,0 +1,28 @@
+---
+import Hero from '../components/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Resume" description="Seiya Terada's Resume">
+	<Hero title="Resume"  />
+    <div class="pdf-container">
+        <iframe
+            src="/assets/Seiya_Terada_Resume.pdf"
+            width="50%"
+            height="1150px"
+        ></iframe>
+    </div>
+</BaseLayout>
+
+<style>
+    .pdf-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    iframe {
+        margin: 0 auto;
+        display: block;
+    }
+</style>
